@@ -1,5 +1,8 @@
 body, html{
-  height:100%;
+  background-image: url('https://ssb.wiki.gallery/images/thumb/b/bb/SSBU-Hyrule_Castle.png/1200px-SSBU-Hyrule_Castle.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  /* height:100%; */
 }
 body{
   margin: 0px;
@@ -22,11 +25,23 @@ body, a:link, a:visited, a:active{
 }
 
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
   position:absolute;
 }
 
+.wormDancer {
+  height: 100px;
+  width: 100px;
+}
+
+.jumping-kirby, .fire-kirby{
+  height: 100px;
+  width: 100px;
+}
+
+.star-kirby {
+  height: 100%;
+  width: 100%;
+}
 /* .dancer.bouncyDancer{
   border:20px solid yellow;
   border-radius:10px;
