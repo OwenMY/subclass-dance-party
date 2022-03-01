@@ -16,15 +16,6 @@ makeShuffleDancer.prototype.step = function(left) {
   // this.$node.toggle();
   // want to use this.node.animate here
   // use this.node.animate again
-
-  // this.$node.addClass('shuffleDancer');
-  // var blueNode = {
-  //   color: pink,
-  //   border: '10px',
-  //   border-radius: '10px',
-  //   position: 'absolute'
-  // }
-  // this.$node.css(blueNode);
   this.$node.css('border', '25px solid blue');
   this.$node.css('border-radius', '25px');
   this.$node.css('position', 'absolute');
