@@ -26,6 +26,16 @@ $(document).ready(function() {
     );
     window.dancers.push(dancer);
     $('body').append(dancer.$node);
+
+  });
+
+  $('.lineUpButton').on('click', function(event) {
+    for (var i = 0; i < window.dancers.length; i++) {
+      var person = window.dancers[i];
+      console.log(person.$node);
+      console.log(person);
+      window.dancers[i].lineUp();
+    }
   });
 
   $('.lineUpButton').on('click', function(event) {
@@ -40,4 +50,18 @@ $(document).ready(function() {
     }
   });
 });
+
+// function to pair dancers up!
+// $('.pairUpButton').on('click', function(event) {
+//   var closest = window.dancers[0];
+//   for (var i = 2; i < window.dancers.length; i++) {
+//     var current = window.dancers[i];
+//     // var leftDifCur =
+//     // var topDifCur =
+//     if (Math.abs(current.left - window.dancers[i - 1].left) + Math.abs(current.top - window.dancers[i - 1].top) < (Math.abs(current.left - closest.left) + Math.abs(current.top - closest.top))) {
+//       closest = window.dancers[i - 1];
+//     }
+//   }
+
+// });
 

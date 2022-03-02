@@ -1,5 +1,10 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> f1b31d4a8e85de2be917079e7006b9e400606027
 var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
+  this.$node.prepend('<img class="fire-kirby" src="assets/images/fire_kirby.png"></>');
 };
 
 makeBlinkyDancer.prototype = Object.create(makeDancer.prototype);
@@ -15,6 +20,11 @@ makeBlinkyDancer.prototype.step = function() {
   this.$node.toggle();
 };
 
+<<<<<<< HEAD
 makeBlinkyDancer.prototype.lineUp = function(node) {
   node.css('left', '1000px');
+=======
+makeBlinkyDancer.prototype.lineUp = function() {
+  this.$node.css('left', '90%');
+>>>>>>> f1b31d4a8e85de2be917079e7006b9e400606027
 };

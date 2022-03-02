@@ -1,5 +1,8 @@
 body, html{
-  height:100%;
+  background-image: url('https://ssb.wiki.gallery/images/thumb/b/bb/SSBU-Hyrule_Castle.png/1200px-SSBU-Hyrule_Castle.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height:100vh;
 }
 body{
   margin: 0px;
@@ -22,11 +25,10 @@ body, a:link, a:visited, a:active{
 }
 
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
   position:absolute;
 }
 
+<<<<<<< HEAD
 .lineUpButton{
   float: left;
 }
@@ -34,5 +36,36 @@ body, a:link, a:visited, a:active{
   display: inline-block;
   /* float: left; */
 }
+=======
+.wormDancer {
+  height: 100px;
+  width: 100px;
+}
+
+.jumping-kirby, .fire-kirby{
+  height: 100px;
+  width: 100px;
+}
+
+.star-kirby {
+  height: 100%;
+  width: 100%;
+}
+/* .dancer.bouncyDancer{
+  border:20px solid yellow;
+  border-radius:10px;
+  position:absolute;
+}; */
+
+/* span.dancer.shuffleDancer{
+  border:15px solid green;
+  border-radius:15px;
+  position:absolute;
+}; */
+
+
+
+
+>>>>>>> f1b31d4a8e85de2be917079e7006b9e400606027
 
 
