@@ -2,7 +2,7 @@ body, html{
   background-image: url('https://ssb.wiki.gallery/images/thumb/b/bb/SSBU-Hyrule_Castle.png/1200px-SSBU-Hyrule_Castle.png');
   background-size: 100%;
   background-repeat: no-repeat;
-  height:100%;
+  height:100vh;
 }
 body{
   margin: 0px;

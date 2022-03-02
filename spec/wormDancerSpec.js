@@ -13,7 +13,7 @@ describe('wormDancer', function() {
   });
 
   // need to change toggle to whatever function in jQuery shuffles
-  it('should have a step function that makes its node shuffle', function() {
+  it('should have a step function that makes its node stretch', function() {
     sinon.spy(wormDancer.$node, 'animate');
     wormDancer.step();
     expect(wormDancer.$node.animate.called).to.be.true;

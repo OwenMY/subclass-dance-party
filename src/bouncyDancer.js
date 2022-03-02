@@ -1,6 +1,7 @@
 
 var makeBouncyDancer = function(top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
+  this.top = top;
   this.position1 = top - 50;
   this.position2 = top + 50;
   this.$node.prepend('<img class="jumping-kirby" src="assets/images/jumping-kirby.png"></img>');
@@ -30,4 +31,8 @@ makeBouncyDancer.prototype.step = function(top) {
     }, 1000);
     this.currentStep = true;
   }
+};
+
+makeBouncyDancer.prototype.lineUp = function() {
+  this.$node.css('left', '20px');
 };
