@@ -16,18 +16,8 @@ $(document).ready(function() {
      * to the stage.
      */
     var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
-    // console.log($('.addDancerButton'))
-    // console.log(dancerMakerFunctionName);
-    // console.log(this);
-    // console.log($(this));
-    // console.log(window);
-    // var makeBlinkyDancer = $(this).data('make-blinky-dancer');
-    // var makeBouncyDancer = $(this).data('make-bouncy-dancer');
-    // var makeShuffleDancer = $(this).data('make-shuffle-dancer');
-    // get the maker function for the kind of dancer we're supposed to make
     var dancerMakerFunction = window[dancerMakerFunctionName];
-    console.log(window);
-    // make a dancer with a random position
+    // console.log(window);
 
     var dancer = new dancerMakerFunction(
       $("body").height() * Math.random(),
@@ -36,6 +26,18 @@ $(document).ready(function() {
     );
     window.dancers.push(dancer);
     $('body').append(dancer.$node);
+  });
+
+  $('.lineUpButton').on('click', function(event) {
+    for (var i = 0; i < window.dancers.length; i++) {
+      var person = window.dancers[i];
+      if (person.lineUp !== undefined) {
+        person.lineUp(person.$node);
+      }
+      console.log(person.lineUp);
+      // console.log(person)
+      // person.$node.css('left', '20px')
+    }
   });
 });
 
